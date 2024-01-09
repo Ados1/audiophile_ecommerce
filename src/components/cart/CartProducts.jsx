@@ -53,7 +53,7 @@ export default function CartProducts({ closeCart }) {
       )}
       {cartArr.length === 0 && (
         <div>
-          <p className="cart__empty">Your Cart is embty.</p>
+          <p className="cart__empty">Your Cart is empty.</p>
           <p className="cart__empty-p">
             Continue shopping on the audiophile website{" "}
             <Link
