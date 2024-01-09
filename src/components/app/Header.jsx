@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
 import { removeFocus } from "../../utils/no_focus";
-import CartModal from "./cart/CartModal";
+import CartModal from "../cart/CartModal.jsx";
 import Navbar from "../nav/Navbar";
 
 export default function Header() {

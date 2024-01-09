@@ -6,8 +6,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Link } from "react-router-dom";
-import { categoriesLinks } from "../../utils/categoriesLinks";
-import { removeFocus, toTopSmooth } from "./utils/no_focus";
+import { categoriesLinks } from "../../utils/categoriesLinks.jsx";
+import { removeFocus, toTopSmooth } from "../../utils/no_focus";
 
 export default function Footer() {
   return (

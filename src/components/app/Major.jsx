@@ -1,16 +1,16 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Category from "../../pages/category_page/Category";
-import Home from "../../pages/home/Home";
-import ProductPage from "../../pages/product_page/ProductPage";
+import Category from "../../pages/category_page/Category.jsx";
+import Home from "../../pages/home/Home.jsx";
+import ProductPage from "../../pages/product_page/ProductPage.jsx";
 
-import categoriesArr from "./data/category_id";
+import categoriesArr from "../../data/category_id.jsx";
 import data from "../../data/data.json";
-import Checkout from "../../pages/checkout/Checkout";
-import Success from "../../pages/checkout/Success";
-import ScrollToTop from "../scroll_restoration/ScrollToTop";
-import PageNotFound from "../../pages/page_not_found/PageNotFound";
+import Checkout from "../../pages/checkout/Checkout.jsx";
+import Success from "../../pages/checkout/Success.jsx";
+import ScrollToTop from "../scroll_restoration/ScrollToTop.jsx";
+import PageNotFound from "../../pages/page_not_found/PageNotFound.jsx";
 
-export default function Body() {
+export default function Major() {
   const categoriesRoutes = categoriesArr.map((category) => (
     <Route
       key={category}
@@ -26,7 +26,7 @@ export default function Body() {
     />
   ));
   return (
-    <Body>
+    <major>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,6 +37,6 @@ export default function Body() {
         <Route path="/404" element={<PageNotFound />} />
         <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
-    </Body>
+    </major>
   );
 }
